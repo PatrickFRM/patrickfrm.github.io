@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+    Phantom by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Machine Learning Unit 7</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+        <style>
+            .back-arrow {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                font-size: 24px;
+                text-decoration: none;
+                color: #000;
+            }
+            .dropdown {
+                margin: 20px 0;
+            }
+            .dropdown-content {
+                display: none;
+                margin-top: 10px;
+                padding: 20px;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .dropdown-button {
+                background-color: #f1f1f1;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 10px 15px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Back Arrow -->
+            <a href="../machine_learning.html" class="back-arrow">&#8592; Back to Machine Learning</a>
+
+            <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <!-- Logo -->
+                    <a href="../../index.html" class="logo">
+                        <span class="symbol"><img src="../../images/logo.svg" alt="" /></span><span class="title">Home</span>
+                    </a>
+
+                    <!-- Nav -->
+                    <nav>
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../machine_learning.html">Machine Learning</a></li>
+                    <li><a href="../../research_methods.html">Research Methods and Professional Practices</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+                    <header>
+                        <h1>Unit 7: Introduction to Artificial Neural Networks (ANNs)</h1>
+                        <p>Details about Machine Learning Unit 7.</p>
+                    </header>
+                    <section>
+                        <header class="major">
+                            <h2>Overview</h2>
+                        </header>
+                        <p>Content specific to Machine Learning Unit 7 goes here.</p>
+                        <div class="dropdown">
+                            <div class="dropdown-button">Exercise 1: Simple Perceptron</div>
+                            <div class="dropdown-content">
+                                <iframe src="../Unit Work/Unit07 Ex1 simple_perceptron.html" width="100%" height="800px"></iframe>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-button">Exercise 2: Perceptron and Operator</div>
+                            <div class="dropdown-content">
+                                <iframe src="../Unit Work/Unit07 Ex2 perceptron_AND_operator.html" width="100%" height="800px"></iframe>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-button">Exercise 3: Multi-Layer Perceptron</div>
+                            <div class="dropdown-content">
+                                <iframe src="../Unit Work/Unit07 Ex3 multi-layer Perceptron.html" width="100%" height="800px"></iframe>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="copyright">
+                        <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="../../assets/js/jquery.min.js"></script>
+        <script src="../../assets/js/browser.min.js"></script>
+        <script src="../../assets/js/breakpoints.min.js"></script>
+        <script src="../../assets/js/util.js"></script>
+        <script src="../../assets/js/main.js"></script>
+        <script>
+            document.querySelectorAll('.dropdown-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    var content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+    Phantom by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Machine Learning Unit 6</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+        <style>
+            .back-arrow {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                font-size: 24px;
+                text-decoration: none;
+                color: #000;
+            }
+            .dropdown {
+                margin: 20px 0;
+            }
+            .dropdown-content {
+                display: none;
+                margin-top: 10px;
+                padding: 20px;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .dropdown-button {
+                background-color: #f1f1f1;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 10px 15px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Back Arrow -->
+            <a href="../machine_learning.html" class="back-arrow">&#8592; Back to Machine Learning</a>
+
+            <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <!-- Logo -->
+                    <a href="../../index.html" class="logo">
+                        <span class="symbol"><img src="../../images/logo.svg" alt="" /></span><span class="title">Home</span>
+                    </a>
+
+                    <!-- Nav -->
+                    <nav>
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../machine_learning.html">Machine Learning</a></li>
+                    <li><a href="../../research_methods.html">Research Methods and Professional Practices</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+                    <header>
+                        <h1>Unit 6: Clustering with Python</h1>
+                        <p>Details about Machine Learning Unit 6.</p>
+                    </header>
+                    <section>
+                        <header class="major">
+                            <h2>Overview</h2>
+                        </header>
+                        <p>This section shows the assignment due for Unit 6 and the exercises for that week. </p>
+                        <div class="dropdown">
+                            <div class="dropdown-button">Development Team Project: Project Report</div>
+                            <div class="dropdown-content">
+                                <p><strong>Assignment Brief: Airbnb business analysis using a data science approach</strong></p>
+                                <p><strong>Background</strong><br>
+                                Since 2008, guests and hosts have used Airbnb to expand on travelling possibilities and present more unique, personalised ways of experiencing the world. The Airbnb dataset (AB_NYC_2019.csv) along with its description can be accessed through Kaggle. This dataset describes the listing activity and metrics in NYC, NY for 2019, which includes all needed information about hosts, geographical availability, and necessary metrics to make predictions and draw conclusions.</p>
+                                <p>This assignment is aimed at assessing your ability to pose interesting questions relevant to Airbnb business, process the data using the key steps of big data analytics, such as, data pre-processing, analysing, and eventually preparing an analytical report. In order for your analysis to be compelling, it must address a substantive issue rather than a trivial one.</p>
+                                <p><strong>TASK 1 (Business analytic question)</strong><br>
+                                Propose an interesting business analytic question that can be answered using the given Airbnb dataset. The proposed question should be useful for Airbnb. An example question could be: is there any noticeable difference in bookings among different areas and what could be the reasons for it?</p>
+                                <p><strong>TASK 2 (Data analysis)</strong><br>
+                                In this task, use your data analytics skills to answer the question posed in the Task 1. Depending upon your chosen question, you will typically have to perform Exploratory Data Analysis (EDA), data pre-processing, statistics-based data analysis, data visualisation and use unsupervised machine learning algorithms (e.g., clustering).</p>
+                                <p><strong>TASK 3 (Analytical report)</strong><br>
+                                In this task, you are expected to prepare an analytical report, which can easily be interpreted by the executive board members of the Airbnb. There is no fixed specification for this report but in general, it must contain an adequate number of visualisation charts/graphs with a lucid description.</p>
+                                <iframe src="../Unit Work/AirBnBFinalReport.pdf" width="100%" height="800px"></iframe>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-button">K-Means Clustering Exercises</div>
+                            <div class="dropdown-content">
+                                <iframe src="../Unit Work/Unit06%20exercises.html" width="100%" height="800px"></iframe>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="copyright">
+                        <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="../../assets/js/jquery.min.js"></script>
+        <script src="../../assets/js/browser.min.js"></script>
+        <script src="../../assets/js/breakpoints.min.js"></script>
+        <script src="../../assets/js/util.js"></script>
+        <script src="../../assets/js/main.js"></script>
+        <script>
+            document.querySelectorAll('.dropdown-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    var content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
